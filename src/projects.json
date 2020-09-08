@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "name": "Sistema de Gerenciamento de Eventos",
+            "link": "https://ic.itp.ifsp.edu.br/sgeifsp",
+            "description": "O sistema de gerenciamento de eventos foi desenvolvido pela Fábrica de Softwares, tem como objetivos: aproximar apresentadores e palestrantes até seu público-alvo de forma organizada e simplificada.",
+            "logo": "./logos/LogoSGE.png"
+        },
+        {
+            "name": "Especialização em WEB",
+            "link": "https://ic.itp.ifsp.edu.br/espweb",
+            "description": "O projeto, especialização em web, foi desenvolvido pela Fábrica de Softwares, tem como objetivos: apresentar um curso em desenvolvimento web no Instituto Federal de Itapetininga e aproximar alunos para o mundo da web.",
+            "logo": "./logos/especiala1.svg"
+        }, 
+        {
+            "name": "Show de Física",
+            "link": "https://showdefisica.itp.ifsp.edu.br",
+            "description": "Show de física é um projeto no campo da Educação e Ciência. Sua missão é contribuir para o ensino de conceitos físicos por meio de diferentes e divertidos métodos de apredizagem.",
+            "logo": "./logos/LogoShowDeFisica.png"
+        }
+    ]
+}

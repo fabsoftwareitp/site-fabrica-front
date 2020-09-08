@@ -1,0 +1,109 @@
+{
+    "Members": [
+        {
+            "id": 1,
+            "name": "Lucas Fernando",
+            "Graduation": "Aluno",
+            "Avatar": "./membros/lucas.jpg",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: [ShowDeFisica, site da Fábrica, SGE], com enfoque no uso das linguagens: [PHP e  SQL]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/LucasCavalherie",
+            "Instagram": "https://www.instagram.com/lucascavalherie/"
+        },
+        {
+
+            "id": 2,
+            "name": "João Morais",
+            "Graduation": "Aluno",
+            "Avatar": "./membros/joao.jpg",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: SGE, site da fábrica, Especialização em WEB, com enfoque no uso das linguagens: [PHP, JavaScript e  SQL]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/joaomorais1f",
+            "Instagram": "https://www.instagram.com/moraiz_joao/"
+
+        },
+        {
+
+            "id": 3,
+            "name": "Rafael Leandro",
+            "Graduation": "Aluno",
+            "Avatar": "https://avatars3.githubusercontent.com/u/41579736?s=400&u=cc5c25689a229e65168b8e1448a6e0ca3cc8adb3&v=4",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: ShowDeFisica, SGE, site da Fábrica, SVSA e SVSA Manual, com enfoque no uso das linguagens: [PHP, Java e  SQL]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/RafaelDamiam",
+            "Instagram": "https://www.instagram.com/rafaeldamiam/"
+
+        },
+        {
+
+            "id": 4,
+            "name": "Samuel Facchetti",
+            "Graduation": "Aluno",
+            "Avatar": "./membros/samuel.jpg",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2020), período ao qual participa no desenvolvimento do projeto: ShowDeFisica, com enfoque no uso das linguagens: [PHP e  SQL]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/SamuelFacchetti",
+            "Instagram": "https://www.instagram.com/samuelfacchettidematos/"
+
+        },
+        {
+
+            "id": 5,
+            "name": "Neemias Borges",
+            "Graduation": "Aluno",
+            "Avatar": "./membros/neemias.jpg",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: ShowDeFisica, SGE, Especialização em WEB, com enfoque nas ferramentas e linguagens front-end: [HTML, CSS, JavaScript]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/Neemoasb",
+            "Instagram": "/"
+          
+        },
+        {
+
+            "id": 6,
+            "name": "Bruno Schanoski",
+            "Graduation": "Aluno",
+            "Avatar": "https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/e35/82699702_191651505561782_3465673712771639641_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=PAkIl-CkxhoAX9jvyHU&oh=46efcd49787d69237527db66b6b8bf6d&oe=5F67CBB1",
+            "Description": "Técnico em Informática pelo IFSP [em formação], ex-membro da Fábrica de Softwares ([2019] - [2020]), período ao qual participou no desenvolvimento do projeto: SGE, com enfoque no desenvolvimento front-end. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/fabsoftwareitp",
+            "Instagram": "https://www.instagram.com/schanoskii/"
+
+        },
+        {
+
+            "id": 7,
+            "name": "Vinicius Alexadre",
+            "Graduation": "Aluno",
+            "Avatar": "https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/e35/91992454_235581417593689_559408753445450144_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=buyZBiHvXNQAX_4UTkc&oh=4eaa92a18838d7c458740dcda7ab7d3e&oe=5F672A92",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: SGE, Especialização em WEB, com enfoque no uso das linguagens: [PHP, JavsCript e  SQL].",
+            "Linkedin": "/",
+            "Github": "https://github.com/ViniciusZevarex",
+            "Instagram": "https://www.instagram.com/vini_zevarex/"
+
+        },
+        {
+
+            "id": 8,
+            "name": "Pedro Gois",
+            "Graduation": "Aluno",
+            "Avatar": "https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/e35/106599923_321567865540368_3287017977353322042_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=100&_nc_ohc=Qn-v6OeNfE8AX_BpaLw&oh=b8736f5db5d0a62ab94a4810364449ec&oe=5F657F6F",
+            "Description": "Técnico em Informática [em formação] pelo IFSP, membro da Fábrica de Softwares (2019 - 2020), período ao qual participa/participou no desenvolvimento dos projetos: SGE, SVSA e SVSA Manual; Com enfoque no uso das linguagens: [PHP, Java e SQL]. ",
+            "Linkedin": "/",
+            "Github": "https://github.com/PedroGois",
+            "Instagram": "https://www.instagram.com/pedro_goixx/"
+
+        },
+        {
+
+            "id": 9,
+            "name": "Danilo Camargo",
+            "Graduation": "Professor ",
+            "Avatar": "./membros/danilo.jpg",
+            "Description": "Possui graduação em Bacharelado em Informática pela Universidade Estadual de Maringá (2014), graduação em Programa Especial de Formação de Docentes para a Educação Básica pelo Instituto Federal de São Paulo (2017) e mestrado em Ciência da Computação pela Universidade Federal de São Carlos (2017). Atualmente é professor do Instituto Federal de São Paulo. Tem experiência na área de Ciência da Computação, com ênfase em Software Básico, atuando principalmente nos seguintes temas: web mobile, adaptation of user interface, multimodal interfaces, framework front-end e context-aware intefaces.",
+            "Linkedin": "/",
+            "Github": "https://github.com/danilocbueno",
+            "Instagram": "https://www.instagram.com/danilocamargobueno/"
+        }
+    ]
+}
