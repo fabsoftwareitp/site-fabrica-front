@@ -7,7 +7,7 @@ import Home from './screens/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Routes = () => (
-    <BrowserRouter>
+    <BrowserRouter basename="/fabsoftware">
         <Switch>
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/login" component={Login} />
