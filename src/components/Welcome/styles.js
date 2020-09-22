@@ -30,13 +30,13 @@ export const Container = styled.div`
     div {
         h1 {
             font-family: 'Roboto', sans-serif;
-            font-size: 10vh;
+            font-size: 6rem;
             width: 7em;
             align-self: center;
         }
+
         button {
             width: 90px;
-            margin-left: 20.5%;
             border: none;
             background-color: var(--circle-color);
             color: white;
@@ -51,9 +51,18 @@ export const Container = styled.div`
         flex-direction: column;
         div {
             h1 {
-                font-size: 8vh;
+                font-size: 5rem;
                 text-align: center;
             }
+
+            button {
+                margin-left: 20.5%;
+            }
+        }
+
+        img {
+            width: 200px;
+            max-width: 100%;
         }
     }
 
@@ -61,7 +70,7 @@ export const Container = styled.div`
         flex-direction: row;
         div {
             h1 {
-                font-size: 50px;
+                font-size: 5rem;
             }
         }
     } 

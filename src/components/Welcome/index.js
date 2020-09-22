@@ -5,7 +5,7 @@ import { GridWelcome, Container } from './styles';
 import SidebarIcons from '../SidebarIcons';
 import Logo from '../../images/Logo.png';
 
-class Layout extends Component {
+class Welcome extends Component {
     render() {
         return (
         <>
@@ -25,4 +25,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout;
+export default Welcome;

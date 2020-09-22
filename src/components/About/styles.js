@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: var(--bg-welcome);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,30 +18,31 @@ export const Bar = styled.div`
 export const Title = styled.h1`
     margin: 5% 0 3% 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 4.5vh;
+    font-size: 3rem;
     text-align: center;
 
     @media (max-width: 740px) and (orientation: landscape) {
-        font-size: 6vh;
+        font-size: 2.75rem;
     }
 `;
 
 export const Description = styled.p`
     margin-top: 2%;
     width: 70%;
-    font-size: 3vh;
+    font-size: 2rem;
     text-align: center;
     @media screen and (max-width: 988px) {
         text-align: justify;
     }
+    
     @media (max-width: 850px) and (orientation: landscape) {
-        font-size: 4vh;
+        font-size: 1.8rem;
     }
 `;
 
 export const Advantages = styled.div`
     display: grid;
-    grid-gap:  50px;
+    grid-gap: 50px;
     height: auto;
     width: 70%;
     margin: 30px auto;
@@ -77,10 +77,10 @@ export const Circle = styled.div`
 
 export const Desc = styled.h1`
     margin-top: 20px;
-    font-size: 3vh;
+    font-size: 2rem;
     text-align: center;
     @media (max-width: 750px) and (orientation: landscape) {
-        font-size: 4vh;
+        font-size: 1.8rem;
     }
     
 `;

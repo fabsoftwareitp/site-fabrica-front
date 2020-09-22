@@ -38,7 +38,7 @@ class Footer extends Component {
                         </TeamA>
                         <TeamB>
                             <Names> João Morais </Names>
-                            <Names> Rafael Campos </Names>
+                            <Names> Rafael Damiam </Names>
                             <Names> Lucas Cavalherie </Names>
                             <Names> Neemias Borges </Names>
                         </TeamB>
@@ -48,9 +48,9 @@ class Footer extends Component {
                     <Title> Contato </Title>
                     <Socials>
                         <Facebook />
-                            <Twitter /> 
-                            <Github />
-                            <Dribbble />
+                        <Twitter /> 
+                        <Github />
+                        <Dribbble />
                     </Socials>
                 </SocialMedia>
                 <Made>

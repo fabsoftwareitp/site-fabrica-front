@@ -5,8 +5,7 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
     align-items: center;
-    max-width: 1920px;
-    height: auto;
+    height: 100%;
     background-color: var(--bg-project);
     @media (max-width: 550px) {
         display: flex;
@@ -18,12 +17,16 @@ export const Content = styled.div`
     position: relative;
     min-width: 100%;
     display: grid;
+    height: 350px;
+    max-height: 100%;
     grid-template-columns: repeat(2, 1fr);
     transition: .5s ease-in-out;
     #pages {
         position: absolute;
-        bottom: 0;
-        right: 47%;
+        top: 96%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center;
         color: #fff;
         margin-bottom: 1vh;
     }
@@ -32,7 +35,7 @@ export const Content = styled.div`
         display: flex;
         flex-direction: column;
         #pages {
-            display: none;
+            visibility: hidden;
         }
     }
     
@@ -67,17 +70,15 @@ export const PreviewButton = styled.button`
 export const AboutProject = styled.div`
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 350px;
     margin: 0 auto 1px auto;
-    height: auto;
+    height: 100%;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.65rem;
     z-index: 5;
     #pagesmob {
         display: none;
     }
-    
-
 
     p {
         text-align: justify;
@@ -85,11 +86,12 @@ export const AboutProject = styled.div`
     }
 
     @media (max-width: 580px) {
-        margin: 0 auto 5% auto;
+        margin: 0 auto 10% auto;
         justify-content: center;
         align-items: center;
         img {
             margin: 20px auto;
+            width: 70px;
         }
         #pagesmob {
             display: unset;
@@ -97,17 +99,22 @@ export const AboutProject = styled.div`
     }
 
     img {
-        max-width: 250px;
-        padding-bottom: 10px;
-        margin: 0 auto 10px auto;
+        max-width: 125px;
+        width: 100px;
+        height: 100px;
+        padding-bottom: 15px;
+        margin: 20px auto 10px auto;
     }
 
     @media (max-width: 750px) and (orientation: landscape) {
         margin-left: 45px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 440px) {
         width: 80%;
+        img {
+            padding: 0;
+        }
     }
 
 `;

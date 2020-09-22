@@ -10,13 +10,18 @@ export default createGlobalStyle`
     body, html, #root {
         height: 100%;
         overflow-x: hidden;
+        background-color: #f4f9ff;
     }
 
     input, button {
         outline: 0;
         border: 0; 
     }
+
+
+    
     :root {
+        font-size: 60%;
         --bg-welcome: #f4f9ff;
         --bg-project: #182138;
         --font-color: #a5793d;
@@ -28,6 +33,9 @@ export default createGlobalStyle`
         --twitter-color: #1DA1F2;
         --linkedin-color: #2867B2;
         --dribbble-color: #ea4c89;
+        @media (min-width: 767px) {
+            font-size: 62.5%;
+        }
     }
     ul {
         list-style: none;

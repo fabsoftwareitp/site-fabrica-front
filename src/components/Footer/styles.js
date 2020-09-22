@@ -12,11 +12,11 @@ export const Container = styled.div`
     grid-template-columns: repeat(3,1fr);
     padding-bottom: 30px;
     margin-top: 60px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 625px) {
         display: flex;
         flex-direction: column;
     }
-    @media screen and (min-width: 600px) and (max-width: 810px) {
+    @media screen and (min-width: 625px) and (max-width: 810px) {
         display: flex;
         justify-content: space-evenly;
     }
@@ -27,7 +27,7 @@ export const Members = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 4.5vh;
+    font-size: 2.4rem;
     text-align: center;
     margin-top: 25px;
     font-weight: bold;
@@ -37,24 +37,25 @@ export const Grid = styled.div`
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+
 `;
 
 export const TeamA = styled.div`
-    @media screen and (min-width: 600px) and (max-width: 810px) {
+    @media screen and (min-width: 625px) and (max-width: 810px) {
         margin-right: 30px;
     }
 `;
 
 export const TeamB = styled.div`
-    @media screen and (min-width: 600px) and (max-width: 810px) {
+    @media screen and (min-width: 625px) and (max-width: 810px) {
         margin-left: 30px;
     }
 `; 
 
 export const Names = styled.p`
-    font-size: 3vh;
+    font-size: 2rem;
     @media (max-width: 740px) and (orientation: landscape) {
-        font-size: 18px;
+        font-size: 1.7rem;
     }
 `;
 
@@ -67,37 +68,37 @@ export const Socials = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 625px) {
         margin-bottom: 20px;
     }
     
-    @media screen and (min-width: 600px) and (max-width: 810px) {
+    @media screen and (min-width: 625px) and (max-width: 850px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 10px;
-        margin-top: 20px;
+        margin: 20px auto 0 auto;
     }
 `;
 
 const IconCSS = css`
     background-size: 100%;
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height: 3.9rem;
     border-radius: 20px;
     &:hover {
         filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
     }
-    @media (max-width: 740px) and (orientation: landscape) {
-        height: 30px;
-        width: 30px;
-    }
+
+    @media (max-width: 600px) {
+        width: 4.5rem;
+        height: 4.4rem;    
+    } 
 `;
 
 export const Facebook = styled.div`
     background-image: url(${FacebookIcon});
     ${IconCSS};
-    @media screen and (min-width: 600px) and (max-width: 810px) {
+    @media screen and (min-width: 625px) and (max-width: 850px) {
         grid-column: 1;
         grid-row: 1;
     }   

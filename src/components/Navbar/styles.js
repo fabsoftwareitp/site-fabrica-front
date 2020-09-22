@@ -17,13 +17,13 @@ export const Ul = styled.ul`
      width: 35%;
      margin-left: 25%;
      li {
-         list-style: none;
+        list-style: none;
+        font-size: 1.6rem;
          a {
              color: rgb(226,226,226);
              text-decoration: none;
              letter-spacing: 3px;
              font-weight: bold;
-             font-size: 14px;
          }
      }
 
@@ -45,8 +45,8 @@ export const Ul = styled.ul`
 `;
 
 export const IconToggle = styled.div`
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     position: fixed;
     top: 15px;
     right: 20px;
@@ -59,8 +59,8 @@ export const IconToggle = styled.div`
     }
 
     div {
-        width: 2rem;
-        height: 0.25rem;
+        width: 3rem;
+        height: 0.5rem;
         background-color: ${ ({ open }) => open ? '#000' : '#000' };
         border-radius: 10px;
         transform-origin: 1px;

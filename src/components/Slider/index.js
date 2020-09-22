@@ -27,13 +27,7 @@ function Slider () {
     const next = () => {
         x === -100 * (slider.length - 1) ? setX(0) : setX(x - 100);
     }
-    // useEffect(() => {
-    // axios.get("http://localhost/siteFabrica/projeto/show")
-    //     .then((response) => {
-    //         let projetos = response.data
-    //         console.log(projetos);
-    //     })
-    // }, [])
+
     return (
 <>
 <Container>
@@ -42,12 +36,14 @@ function Slider () {
 
             <Content key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
+                    
                     <img src={project.logo} alt="logo_do_projeto" /> 
                     <p>{project.description} </p>
                     <AccessProject>
                         <a href={project.link} rel="noopener noreferrer" target="_blank"><span> Acesse, {project.name} </span> </a>
                     </AccessProject>
                 <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
+
                 </AboutProject>
                 <BackImg>
                     <img src={project.logo} alt="logo_do_projeto" />

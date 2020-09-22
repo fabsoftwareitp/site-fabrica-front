@@ -20,7 +20,8 @@ export const Container = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 700px) {
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
@@ -38,7 +39,8 @@ export const Card = styled(ReactCardFlip)`
 
 export const Front = styled.div`
     height: auto;
-    width: 330px;
+    width: 300px;
+    max-width: 100%;
     @media screen and (max-width: 675px) {
         margin-top: 20px;
     }
@@ -46,7 +48,8 @@ export const Front = styled.div`
 
 export const Back = styled.div`
     height: auto;
-    width: 320px;
+    width: 300px;
+    max-width: 100%;
     @media screen and (max-width: 675px) {
         margin-top: 20px;
     }
@@ -77,7 +80,7 @@ export const Radius = styled.div`
     width: 90px;
     border-radius: 45px;
     background-color: gray;
-    border: 2px solid white;
+    border: 2px solid var(--bg-welcome);
     display: flex;
     align-self: center;
     position: relative;
@@ -109,12 +112,16 @@ export const Swap = styled(SwapHorizIcon)`
 `;
 
 export const Description = styled.p`
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 15px 10px 0 10px;
     text-align: justify;
     height: 130px;
     overflow-y: auto;
     color: #fff;
+
+    @media (max-width: 320px) {
+        padding: 10px 20px 0 20px;
+    }
 `;
 
 export const Contact = styled.div`

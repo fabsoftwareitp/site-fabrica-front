@@ -4,7 +4,7 @@ export const SidebarContainer = styled.nav`
     background-color: var(--bg-welcome);
     grid-area: 'Sidebar';
     ul {
-        margin-left: 30px;
+        margin-left: 1rem;
         height: 92vh;
         display: flex;
         flex-direction: column;
@@ -44,7 +44,6 @@ export const SidebarContainer = styled.nav`
     @media (max-width: 740px) and (orientation: landscape) {
         ul {
             height: 15vh;
-
             li {
                 margin: 20px 10%;
             }
