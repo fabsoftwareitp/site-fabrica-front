@@ -41,7 +41,7 @@ function Members () {
             {membros.map((membro, posicao) => {
                 return (
                     <Card key={membro.id} isFlipped={isFlipped === membro.id} flipDirection="horizontal">
-                        <Front>
+                        <Front onClick={() => handleClick(membro.id)}>
                             <CardHeader />
                             <CardBody>
                                 <Radius>
@@ -49,10 +49,10 @@ function Members () {
                                 </Radius>
                                 <Title FontSize={24}> {membro.name} </Title>
                                 <Graduate> {membro.Graduation} </Graduate>
-                                <Swap onClick={() => handleClick(membro.id)} />
+                                <Swap className="swap"/>
                             </CardBody>
                         </Front>
-                        <Back>
+                        <Back onClick={handleClick}>
                             <CardHeader>
                                 <Title FontSize={18}> {membro.name} </Title>
                             </CardHeader>
@@ -65,7 +65,7 @@ function Members () {
                                     <a href={membro.Github} target="_blank" rel="noopener noreferrer"> <Github /> </a>
                                     <a href={membro.Instagram} target="_blank" rel="noopener noreferrer"><Instagram /> </a>
                                 </Contact>
-                                <Swap onClick={handleClick} />
+                                <Swap className="swap" />
                             </CardBody>
                         </Back>
                     </Card>

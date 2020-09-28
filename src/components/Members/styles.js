@@ -37,19 +37,30 @@ export const Card = styled(ReactCardFlip)`
     margin: 0 10px;
 `;
 
+const CardStyles = css`
+    transition: box-shadow .2s ease;
+    &:hover {
+        box-shadow: 2px 2px 4px #000;
+        cursor: pointer;
+    }
+`;
+
 export const Front = styled.div`
     height: auto;
     width: 300px;
     max-width: 100%;
+    ${CardStyles};
     @media screen and (max-width: 675px) {
         margin-top: 20px;
     }
+
 `;
 
 export const Back = styled.div`
     height: auto;
     width: 300px;
     max-width: 100%;
+    ${CardStyles};
     @media screen and (max-width: 675px) {
         margin-top: 20px;
     }
@@ -72,6 +83,12 @@ export const CardBody = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &:hover {
+        .swap {
+            transform: rotate(180deg);
+            transition: transform 0.2s ease;
+        }
+    }
 `;
 
 
@@ -105,10 +122,8 @@ export const Graduate = styled.p`
 
 export const Swap = styled(SwapHorizIcon)`
     margin: 30px auto 10px auto;
-    &:hover {
-        transform: rotate(180deg);
-        transition: transform 0.2s ease;
-    }
+    font-size: 2rem !important;
+
 `;
 
 export const Description = styled.p`

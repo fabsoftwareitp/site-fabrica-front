@@ -11,7 +11,6 @@ export default createGlobalStyle`
         height: 100%;
         overflow-x: hidden;
         background-color: #f4f9ff;
-        -webkit-overflow-scrolling: touch;
     }
 
     input, button {
@@ -41,6 +40,7 @@ export default createGlobalStyle`
     ul {
         list-style: none;
     }
+    
     a {
         text-decoration: none;
     }
