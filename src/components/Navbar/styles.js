@@ -19,12 +19,20 @@ export const Ul = styled.ul`
      li {
         list-style: none;
         font-size: 1.6rem;
-         a {
-             color: rgb(226,226,226);
-             text-decoration: none;
-             letter-spacing: 3px;
-             font-weight: bold;
-         }
+        padding: 10px;
+        background-image: linear-gradient(90deg,
+            var(--bg-welcome) 0%,
+            var(--bg-welcome) 50%,
+            var(--bg-project) 50%,
+            var(--bg-project) 100%);
+        background-size: 200%;
+        transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+        transition-delay: 0.0s, 0.15s;
+        &:hover {
+            color: #fff;
+            cursor: pointer;
+            background-position: -100% 100%;
+        }
      }
 
   @media (max-width: 600px) {
@@ -39,7 +47,18 @@ export const Ul = styled.ul`
     width: 35%;
     transition: transform 0.5s ease-in;
     li {
-      color: #fff;
+        color: #fff;
+        background-image: linear-gradient(90deg,
+            var(--bg-project) 0%,
+            var(--bg-project) 50%,
+            var(--bg-welcome) 50%,
+            var(--bg-welcome) 100%);
+        background-size: 200%;
+        transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+        transition-delay: 0.0s, 0.15s;
+        &:hover {
+            color: #000;
+        }
     }
   }
 `;

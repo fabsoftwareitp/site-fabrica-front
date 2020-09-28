@@ -34,7 +34,7 @@ function Slider () {
         {slider.map((project, index) => {
             return (
 
-            <Content key={index} style={{ transform: `translateX(${x}%)` }}>
+            <Content id="projetos" key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
                     
                     <img src={project.logo} alt="logo_do_projeto" /> 

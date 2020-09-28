@@ -81,6 +81,7 @@ export const Socials = styled.div`
 `;
 
 const IconCSS = css`
+    cursor: pointer;
     background-size: 100%;
     width: 4rem;
     height: 3.9rem;
