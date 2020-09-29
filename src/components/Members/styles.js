@@ -10,7 +10,6 @@ import ReactCardFlip from 'react-card-flip';
 export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: auto;
     width: 80%;
     margin: 30px auto;
     justify-content: center;
@@ -35,6 +34,7 @@ export const Card = styled(ReactCardFlip)`
     display: grid;
     width: 100%;
     margin: 0 10px;
+    height: 325px;
 `;
 
 const CardStyles = css`
@@ -46,7 +46,7 @@ const CardStyles = css`
 `;
 
 export const Front = styled.div`
-    height: auto;
+height: 300px;
     width: 300px;
     max-width: 100%;
     ${CardStyles};
@@ -57,7 +57,7 @@ export const Front = styled.div`
 `;
 
 export const Back = styled.div`
-    height: auto;
+    height: 300px;
     width: 300px;
     max-width: 100%;
     ${CardStyles};
@@ -77,7 +77,7 @@ export const CardHeader = styled.div`
 
 export const CardBody = styled.div`
     position: relative;
-    height: auto;
+    height: 74%;
     background: var(--circle-color);
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ export const Graduate = styled.p`
 `;
 
 export const Swap = styled(SwapHorizIcon)`
-    margin: 30px auto 10px auto;
+    margin: 20px auto 10px auto;
     font-size: 2rem !important;
 
 `;
@@ -140,22 +140,18 @@ export const Description = styled.p`
 `;
 
 export const Contact = styled.div`
-    height: auto;
     display: flex;
-    margin-top: 20px;
     width: 30%;
+    margin-top: 20px;
     justify-content: space-between;
 `;
 
 const iconCSS = css`
-    height: 45px;
-    width: 45px;
+    font-size: 2.2rem !important;
     path {
         fill: #000;
     }
 `;
-
-
 
 export const Linkedin = styled(LinkedInIcon)`
     ${iconCSS};
