@@ -1,0 +1,16 @@
+{
+    "short_name": "Fábrica de Software",
+    "name": "Fab. Software Itapê",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#ffb441",
+    "background_color": "#182138"
+  }
