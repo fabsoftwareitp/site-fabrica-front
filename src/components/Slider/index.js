@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-
-import projects from '../../projects.json';
-
 import { Title } from '../Members/styles';
+
+import axios from 'axios';
 
 import {
     Container,
@@ -18,7 +17,22 @@ import {
 
 function Slider () {
 
-    let slider = projects.projects;
+    const [data, setData] = useState({ projetos: [] });
+    
+    useEffect(() => {
+        const fetchData = async () => {
+          const result = await axios(
+            'https://fabsoftwareitp.000webhostapp.com/api/projetos',
+          );
+     
+          setData(result.data);
+        };
+     
+        fetchData();
+      }, []);
+
+    let slider = data.projetos;
+    console.log(slider);
     const [x, setX] = useState(0);
 
     const preview = () => {
@@ -38,11 +52,11 @@ function Slider () {
             <Content id="projetos" key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
                     
-                    <Title className="title project-title" FontSize={2}> {project.name} </Title>
-                    <p className="not-title">{project.description} </p>
+                    <Title className="title project-title" FontSize={2}> {project.nome} </Title>
+                    <p className="not-title">{project.descricao} </p>
                 <div className="footer-project">
                     <AccessProject className="not-title button-project">
-                        <a href={project.link} rel="noopener noreferrer" target="_blank"><span>{project.name}</span> </a>
+                        <a href={project.link} rel="noopener noreferrer" target="_blank"><span>{project.nome}</span> </a>
                     </AccessProject>
                     <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
                 </div>
