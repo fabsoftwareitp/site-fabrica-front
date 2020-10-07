@@ -6,17 +6,16 @@ export const NavbarContainer = styled.nav`
     align-items: center;
     height: 8vh;
     background-color: var(--bg-welcome);
-    font-family: 'Roboto', sans-serif;
 `;
 
 export const Ul = styled.ul`
-     display: flex;
-     flex-flow: row nowrap;
-     justify-content: space-around;
-     align-items: center;
-     width: 35%;
-     margin-left: 25%;
-     li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+
+    li {
         list-style: none;
         font-size: 1.6rem;
         padding: 10px;

@@ -18,7 +18,15 @@ export default createGlobalStyle`
         border: 0; 
     }
 
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
 
+    .not-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;      
+    }
     
     :root {
         font-size: 60%;

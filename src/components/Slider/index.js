@@ -4,6 +4,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 import projects from '../../projects.json';
 
+import { Title } from '../Members/styles';
 
 import {
     Container,
@@ -37,13 +38,14 @@ function Slider () {
             <Content id="projetos" key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
                     
-                    <img src={project.logo} alt="logo_do_projeto" /> 
-                    <p>{project.description} </p>
-                    <AccessProject>
-                        <a href={project.link} rel="noopener noreferrer" target="_blank"><span> Acesse, {project.name} </span> </a>
+                    <Title className="title project-title" FontSize={2}> {project.name} </Title>
+                    <p className="not-title">{project.description} </p>
+                <div className="footer-project">
+                    <AccessProject className="not-title button-project">
+                        <a href={project.link} rel="noopener noreferrer" target="_blank"><span>{project.name}</span> </a>
                     </AccessProject>
-                <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
-
+                    <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
+                </div>
                 </AboutProject>
                 <BackImg>
                     <img src={project.logo} alt="logo_do_projeto" />

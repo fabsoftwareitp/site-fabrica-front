@@ -34,6 +34,7 @@ export const Content = styled.div`
     @media (max-width: 580px) {
         display: flex;
         flex-direction: column;
+
         #pages {
             visibility: hidden;
         }
@@ -72,29 +73,49 @@ export const AboutProject = styled.div`
     flex-direction: column;
     width: 350px;
     margin: 0 auto 1px auto;
-    height: 100%;
+    height: 350px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    font-size: 1.65rem;
     z-index: 5;
+
     #pagesmob {
-        display: none;
+        visibility: hidden;
+    }
+
+    .project-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-project {
+        text-align: center;
     }
 
     p {
         text-align: justify;
         margin-bottom: 20px;
+        font-size: 1.6rem;
+        height: 100px;
     }
 
     @media (max-width: 580px) {
-        margin: 0 auto 10% auto;
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         img {
             margin: 20px auto;
             width: 70px;
         }
+
         #pagesmob {
-            display: unset;
+            visibility: visible;
+            font-size: 1.4rem;
+        }
+
+        p {
+            height: 120px;
+            overflow-y: auto;
         }
     }
 
@@ -115,17 +136,31 @@ export const AboutProject = styled.div`
         img {
             padding: 0;
         }
-    }
 
+        .project-title {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        .footer-project {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
 `;
 
 export const AccessProject = styled.button`
     display: block;
-    width: 100%;
-    max-width: 250px;
-    height: 50px;
+    max-width: 100%;
+    width: 250px;
+    height: 50px !important;
     background-color: #031d8f;
-    padding: 10px 0;
+    padding: 10px 8px;
     border-radius: 10px;
     margin: 0 auto 10px auto;
     cursor: pointer;
@@ -133,9 +168,10 @@ export const AccessProject = styled.button`
         background-color: #496afc;
     }
     transition: .5s;
-    span {
+    a {
         color: #fff;
     }
+
 `;
 
 export const BackImg = styled.div`

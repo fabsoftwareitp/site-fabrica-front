@@ -14,7 +14,7 @@ export const Container = styled.div`
     margin: 30px auto;
     justify-content: center;
     align-items: center;
-    grid-gap: 30px 40px;
+    grid-gap: 30px;
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -33,37 +33,32 @@ export const Container = styled.div`
 export const Card = styled(ReactCardFlip)`
     display: grid;
     width: 100%;
-    margin: 0 10px;
-    height: 325px;
 `;
 
 const CardStyles = css`
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
     transition: box-shadow .2s ease;
     &:hover {
         box-shadow: 2px 2px 4px #000;
         cursor: pointer;
     }
+    @media screen and (max-width: 675px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 90vw;
+    }
 `;
 
 export const Front = styled.div`
-height: 300px;
-    width: 300px;
-    max-width: 100%;
     ${CardStyles};
-    @media screen and (max-width: 675px) {
-        margin-top: 20px;
-    }
-
 `;
 
 export const Back = styled.div`
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
     ${CardStyles};
-    @media screen and (max-width: 675px) {
-        margin-top: 20px;
-    }
 `;
 
 export const CardHeader = styled.div`
@@ -101,7 +96,7 @@ export const Radius = styled.div`
     display: flex;
     align-self: center;
     position: relative;
-    bottom: 30px;
+    bottom: 55px;
 `;
 
 export const Photo = styled.img`
@@ -111,18 +106,18 @@ export const Photo = styled.img`
 `;
 
 export const Title = styled.h1`
-    font-size: ${props => props.FontSize+'px'};
+    font-size: ${props => props.FontSize+'rem'};
     color: #fff;
 `;
 
 export const Graduate = styled.p`
     color: rgba(0,0,0,0.8);
-    font-size: 14px;    
+    font-size: 1.5rem;    
 `;
 
 export const Swap = styled(SwapHorizIcon)`
     margin: 20px auto 10px auto;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
 
 `;
 
@@ -179,7 +174,7 @@ export const Instagram = styled(InstagramIcon)`
     ${iconCSS};
     &:hover {
         path {
-            fill:#bc2a8d;
+            fill: #bc2a8d;
         }
         box-shadow: 0 0 15px #bc2a8d;
         transition: all 0.5s ease;

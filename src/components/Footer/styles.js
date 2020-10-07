@@ -53,10 +53,7 @@ export const TeamB = styled.div`
 `; 
 
 export const Names = styled.p`
-    font-size: 2rem;
-    @media (max-width: 740px) and (orientation: landscape) {
-        font-size: 1.7rem;
-    }
+    font-size: 1.7rem;
 `;
 
 export const SocialMedia = styled.div`
@@ -139,7 +136,7 @@ export const ContentFooter = styled.div`
     span {
         margin: 20px 0 10px 0;
         color: rgba(255,255,255,0.6);
-        font-size: 14px;
+        font-size: 1.4rem;
         @media screen and (max-width: 475px) {
             text-align: center;
         }

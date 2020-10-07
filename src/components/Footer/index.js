@@ -28,15 +28,15 @@ class Footer extends Component {
             <>
             <Container>
                 <Members>
-                    <Title> Dedicado aos Membros </Title>
+                    <Title className="title"> Dedicado aos Membros </Title>
                     <Grid>
-                        <TeamA>
+                        <TeamA className="not-title">
                             <Names> Pedro Gois </Names>
                             <Names> Vinicius Zevarex </Names>
                             <Names> Bruno Schanoski </Names>
                             <Names> Samuel Fachetti </Names>
                         </TeamA>
-                        <TeamB>
+                        <TeamB className="not-title">
                             <Names> João Morais </Names>
                             <Names> Rafael Damiam </Names>
                             <Names> Lucas Cavalherie </Names>
@@ -45,7 +45,7 @@ class Footer extends Component {
                     </Grid>
                 </Members>
                 <SocialMedia>
-                    <Title> Contato </Title>
+                    <Title className="title"> Contato </Title>
                     <Socials>
                         <Facebook />
                         <Twitter /> 
@@ -54,11 +54,11 @@ class Footer extends Component {
                     </Socials>
                 </SocialMedia>
                 <Made>
-                    <Title> Desenvolvido Por: </Title>
+                    <Title className="title"> Desenvolvido Por: </Title>
                     <Logo src={LogoSGE} alt="Logo_Fábrica" />
                 </Made>
             </Container>
-            <ContentFooter>
+            <ContentFooter className="not-title">
                 <span>Copyright &#169; 2020 Fábrica de Softwares ITP - IFSP - Todos os direitos reservados</span>
             </ContentFooter>
             </>

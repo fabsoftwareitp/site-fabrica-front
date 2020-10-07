@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import members from  '../../members.json';
 
 import { 
@@ -23,10 +22,6 @@ import {
 
 
 function Members () {
-
-    
-
-
     let membros = members.Members;
 
     const [isFlipped, setIsflipped] = useState();
@@ -47,17 +42,17 @@ function Members () {
                                 <Radius>
                                     <Photo src={membro.Avatar} alt="foto_de_perfil:" />
                                 </Radius>
-                                <Title FontSize={24}> {membro.name} </Title>
-                                <Graduate> {membro.Graduation} </Graduate>
+                                <Title className="title" FontSize={2.2}> {membro.name} </Title>
+                                <Graduate className="not-title"> {membro.Graduation} </Graduate>
                                 <Swap className="swap"/>
                             </CardBody>
                         </Front>
                         <Back onClick={handleClick}>
                             <CardHeader>
-                                <Title FontSize={18}> {membro.name} </Title>
+                                <Title className="title" FontSize={1.9}> {membro.name} </Title>
                             </CardHeader>
                             <CardBody>
-                                <Description>
+                                <Description className="not-title">
                                     {membro.Description}
                                 </Description>
                                 <Contact>

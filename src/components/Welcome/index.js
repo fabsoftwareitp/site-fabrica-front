@@ -13,8 +13,8 @@ class Welcome extends Component {
                     <SidebarIcons />
                     <Container> 
                         <div>
-                            <h1> Fábrica De Softwares </h1>
-                            <button> Projetos </button>
+                            <h1 className="title"> Fábrica De Softwares </h1>
+                            <button className="not-title"> Projetos </button>
                         </div>
                             <img src={Logo} alt="logo do fábrica" /> 
                     </Container>
