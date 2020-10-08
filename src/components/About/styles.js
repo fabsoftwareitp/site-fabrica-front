@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Bar = styled.div`
-    height: 3vh;
+    height: 20px;
     width: 100%;
     background: var(--circle-color);
 `

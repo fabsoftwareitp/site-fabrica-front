@@ -40,6 +40,13 @@ export const SidebarContainer = styled.nav`
             }
         }
     }
+    
+    @media (min-width: 1400px) {
+        display: flex;
+        height: 500px;
+        align-self: center;
+        display: none;
+    }
 
     @media (max-width: 740px) and (orientation: landscape) {
         ul {

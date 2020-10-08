@@ -5,6 +5,12 @@ export const GridWelcome = styled.div`
     grid-template-areas:
     'Sidebar Text';
     grid-template-columns: 4rem auto;
+    @media (min-width: 1400px) {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        
+    }
 
     @media screen and (max-width: 740px) {
         display: flex;
@@ -24,8 +30,11 @@ export const Container = styled.div`
     grid-area: 'Text';
     display: flex;
     align-items: center;
+    align-self: center;
+    justify-self: center;
     background-color: var(--bg-welcome);
-    height: 92vh;
+    height: 500px;
+    max-height: 500px;
     justify-content: space-evenly;
     div {
         h1 {
