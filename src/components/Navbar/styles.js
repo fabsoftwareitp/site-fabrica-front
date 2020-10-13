@@ -15,8 +15,8 @@ export const Ul = styled.ul`
     align-items: center;
     width: 35%;
 
-    li {
-        list-style: none;
+    a {
+        color: #000;
         font-size: 1.6rem;
         padding: 10px;
         background-image: linear-gradient(90deg,

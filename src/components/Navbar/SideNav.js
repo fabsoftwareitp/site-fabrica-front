@@ -1,14 +1,15 @@
 import React from 'react';
-import {Ul} from './styles';
+import { Ul } from './styles';
+// import { Link } from 'react-router-dom';
 
 
 const SideNav = ({ open }) => {
     return (
         <Ul open={open} className="not-title">
-            <li>Inicio</li>
-            <li>Projetos</li>
-            <li>Sobre</li>
-            <li>Contato</li>
+            <li><a href="/"> Notícias </a> </li>
+            <li><a href="#projetos"> Projetos </a> </li>
+            <li><a href="#sobre"> Sobre </a> </li>
+            <li><a href="#contato"> Contato </a> </li>
         </Ul>
     )
 }

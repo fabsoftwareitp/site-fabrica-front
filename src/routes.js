@@ -1,18 +1,16 @@
 import React from 'react';
 
 import Home from './screens/Home';
-// import Login from './screens/Login';
-// import Dashboard from './screens/admin';
+// import Posts from './screens/Posts';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+// 
 const Routes = () => (
     <BrowserRouter basename={window.location.pathname || ''}>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            {/* <Route exact path="/login" component={Login} />
-            <Route exact path="/Dashboard" component={Dashboard} /> */}
-        </Switch>
+
+            <Route path="/" exact component={Home} />
+            {/* <Route path="/noticias" component={Posts} />  */}
+
     
     </BrowserRouter>
 );

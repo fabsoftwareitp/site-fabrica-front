@@ -7,6 +7,7 @@ import Welcome from '../../components/Welcome';
 import Slider from '../../components/Slider';
 import About from '../../components/About';
 import Members from '../../components/Members';
+import Card from '../../components/Card';   
 import Footer from '../../components/Footer';
 
 
@@ -25,6 +26,7 @@ const Wrapper = styled.div`
             <Slider />
             <About />
             <Members />
+            <Card />
             <Footer />
         </Wrapper>
         </>
