@@ -29,6 +29,7 @@ export const Content = styled.div`
         text-align: center;
         color: #fff;
         margin-bottom: 1vh;
+        font-size: 1.6rem;
     }
 
     @media (max-width: 580px) {
@@ -180,8 +181,8 @@ export const BackImg = styled.div`
     justify-content: center;
     align-items: center;
     img {
-        width: 200px;
-        max-width: 100%;
+        max-width: 70%;
+        /* max-width: 100%; */
     }
 
     @media (max-width: 580px) {

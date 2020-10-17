@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Card from '../../components/Card';
+import Footer from '../../components/Footer';
 // import { Container } from './styles';
 
 function Posts() {
@@ -8,6 +9,7 @@ function Posts() {
       <>
       <h1> Notícias </h1>
         <Card />
+        <Footer />
       </>
   )
 }

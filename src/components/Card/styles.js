@@ -1,12 +1,24 @@
 import styled from 'styled-components';
 
+
+export const ContainerFluid = styled.div`
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    width: 90%;
+    @media (min-width: 600px) {
+        width: 80%;
+        max-width: 1280px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+`;
+
 export const Container = styled.div`
     margin: 30px auto;
     position: relative;
-    width: 500px;
-    max-width: 90vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: red;
     align-items: center;
     img {
@@ -18,8 +30,8 @@ export const Container = styled.div`
         margin: 20px auto 0 auto;
     }
 
-    @media (min-width: 500px) {
-        flex-direction: row;
+    @media (max-width: 930px) {
+        flex-direction: column;
         img {
             margin: 0;
             width: 200px;
@@ -43,7 +55,7 @@ export const Content = styled.div`
         font-size: 1.5rem;
         display: flex;
         justify-content: flex-end;
-        margin: 0px 10px ;
+        margin: 0px 10px;
     }
 
     @media (max-width: 500px) {

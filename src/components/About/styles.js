@@ -9,6 +9,14 @@ export const Container = styled.div`
     margin: 0 auto;
 `;
 
+export const Gallery = styled.div`
+
+    .gallery {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+`;
+
 export const Bar = styled.div`
     height: 20px;
     width: 100%;
@@ -87,31 +95,63 @@ export const Desc = styled.h1`
 
 export const ContainerTeam = styled.div`
     position: relative;
-    height: auto;
-    width: 60%;
+    height: 500px;
+    width: 50%;
     background-color: orange;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
     h1 {
-        font-size: 3vh;
-        font-family: 'Roboto', sans-serif;
-        padding-top: 40px;
+        font-size: 2rem;
+        margin: 20px auto;
+        text-transform: uppercase;
     }
 
     img {
         /* z-index: 5; */
-        width: 97%;
-        height: auto;
-        margin: 20px 0 5px 0;
+        width: 300px;
+        max-width: 96%; 
+        height: 300px;
     }
 
-    @media (max-width: 580px) {
-        width: 100%;
+    @media (max-width: 780px) {
+        img {
+            margin: 0 auto;
+        }
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
     }
+`;
+
+export const GridGallery = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 20px auto;
+    @media screen and (max-width: 410px) {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px auto;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+`;
+
+export const ImagesButton = styled.button`
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+    }
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
 `;
 
 export const Blue = styled.div`

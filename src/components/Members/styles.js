@@ -63,7 +63,7 @@ export const Back = styled.div`
 
 export const CardHeader = styled.div`
     height: 80px;
-    background: var(--bg-project);
+    background: #171123;
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ export const CardHeader = styled.div`
 export const CardBody = styled.div`
     position: relative;
     height: 74%;
-    background: var(--circle-color);
+    background: #492b6a;
     display: flex;
     flex-direction: column;
     align-items: center;
