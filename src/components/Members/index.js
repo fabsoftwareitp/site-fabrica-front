@@ -56,9 +56,9 @@ function Members () {
                                     {membro.Description}
                                 </Description>
                                 <Contact>
-                                    <a href={membro.Linkedin} target="_blank" rel="noopener noreferrer"><Linkedin /> </a>
-                                    <a href={membro.Github} target="_blank" rel="noopener noreferrer"> <Github /> </a>
-                                    <a href={membro.Instagram} target="_blank" rel="noopener noreferrer"><Instagram /> </a>
+                                    <a href={membro.Linkedin} target="_blank" ><Linkedin /> </a>
+                                    <a href={membro.Github} target="_blank" > <Github /> </a>
+                                    <a href={membro.Instagram} target="_blank" ><Instagram /> </a>
                                 </Contact>
                                 <Swap className="swap" />
                             </CardBody>

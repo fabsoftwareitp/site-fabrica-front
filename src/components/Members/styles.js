@@ -45,7 +45,7 @@ const CardStyles = css`
         cursor: pointer;
     }
     @media screen and (max-width: 675px) {
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     @media screen and (max-width: 320px) {
@@ -84,6 +84,7 @@ export const CardBody = styled.div`
             transition: transform 0.2s ease;
         }
     }
+
 `;
 
 
@@ -128,6 +129,16 @@ export const Description = styled.p`
     height: 130px;
     overflow-y: auto;
     color: #fff;
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--circle-color);
+}
 
     @media (max-width: 320px) {
         padding: 10px 20px 0 20px;

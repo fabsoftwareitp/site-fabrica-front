@@ -1,0 +1,22 @@
+{
+    "news": [
+        {
+            "title": "festa",
+            "description": "Lorem ipsdum dolor sit amemt ..",
+            "path_img": "https://xtudoreceitas.com/wp-content/uploads/Massa-Basica-para-Salgados-Fritos-500x400.jpg",
+            "date": "21/10/2020"
+        },
+        {
+            "title": "festa 2",
+            "description": "Lorem ipsdum dolor sit amemt ..",
+            "path_img": "https://picsum.photos/200/300",
+            "date": "21/10/2020"      
+        },
+        {
+            "title": "festa 3 ",
+            "description": "Lorem ipsdum dolor sit amemt ..",
+            "path_img": "https://picsum.photos/200/350",
+            "date": "21/10/2020"
+        }
+    ]
+}

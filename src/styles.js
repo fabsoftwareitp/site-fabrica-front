@@ -11,6 +11,7 @@ export default createGlobalStyle`
         height: 100%;
         overflow-x: hidden;
         background-color: #f4f9ff;
+        flex: 1 0 auto;
     }
 
     input, button {

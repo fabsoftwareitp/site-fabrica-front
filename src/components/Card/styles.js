@@ -14,6 +14,13 @@ export const ContainerFluid = styled.div`
     }
 `;
 
+export const Post = styled.div`
+    text-align: center;
+    .news {
+        font-size: 2.2rem;
+    }
+`;
+
 export const Container = styled.div`
     margin: 30px auto;
     position: relative;
@@ -49,6 +56,8 @@ export const Content = styled.div`
         text-align: justify !important;
         font-size: 1.6rem;
         padding: 5px 12px;
+        height: 118px;
+        overflow-y: auto;
     }
 
     span {
