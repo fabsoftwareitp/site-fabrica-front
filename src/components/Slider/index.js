@@ -32,7 +32,7 @@ function Slider () {
       }, []);
 
     let slider = data.projetos;
-    // console.log(slider);
+
     const [x, setX] = useState(0);
 
     const preview = () => {
@@ -56,7 +56,7 @@ function Slider () {
                     <p className="not-title">{project.descricao} </p>
                 <div className="footer-project">
                     <AccessProject className="not-title button-project">
-                        <a href={project.link} rel="noreferrer" target="_blank"><span>{project.nome}</span> </a>
+                        <a href={project.link}  target="_blank"><span>{project.nome}</span> </a>
                     </AccessProject>
                     <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
                 </div>

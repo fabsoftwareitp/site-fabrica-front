@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContainerFluid, Container, Content, Post } from './styles';
+import {  Container, Content } from './styles';
 
 function Card( { title, path_img, description, date }) {
   return (

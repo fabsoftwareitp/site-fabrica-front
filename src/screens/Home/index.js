@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import { ContainerFluid } from '../../components/Card/styles';
+import { AccessProject } from '../../components/Slider/styles';
 import Navbar from '../../components/Navbar';
 import Welcome from '../../components/Welcome';
 import Slider from '../../components/Slider';
@@ -10,11 +12,25 @@ import Members from '../../components/Members';
 import Card from '../../components/Card';   
 import Footer from '../../components/Footer';
 
-import News from '../../news.json';
+
 
 function Home()  {
-    let Posts = News.news;
-const Wrapper = styled.div`
+    const [data, setData] = useState({ posts: [] });
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'https://fabsoftwareitp.000webhostapp.com/api/ultimosPosts',
+            );
+
+            setData(result.data);
+        };
+
+        fetchData();
+    }, []);
+
+    let Posts = data.posts;
+    const Wrapper = styled.div`
     max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -30,10 +46,14 @@ const Wrapper = styled.div`
         <ContainerFluid>
             {Posts.map((post, index) => {
                 return (
-                    <Card key={index} title={post.title} path_img={post.path_img} description={post.description} date={post.date} />
+                    <Card key={index} title={post.titulo} path_img={post.imagem} description={post.descricao} date={post.dataCriacao} />
                 )
             })}
+                    <AccessProject>
+                        <Link to="/noticias"> Ver mais </Link>
+                    </AccessProject>
         </ContainerFluid>
+
             <Footer />
         </Wrapper>
         </>
