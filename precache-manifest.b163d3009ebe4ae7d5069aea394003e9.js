@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "867638875f7a61b8a9c10e9ca19665c2",
+    "revision": "f37486d920ef14871d5ad87ca559c679",
     "url": "/site-fabrica-front/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/site-fabrica-front/static/js/2.80e000f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2132341343e58999e362",
-    "url": "/site-fabrica-front/static/js/main.03bae82b.chunk.js"
+    "revision": "918b1eb80fac00141f07",
+    "url": "/site-fabrica-front/static/js/main.3b496d31.chunk.js"
   },
   {
     "revision": "e8b51b4ec7502a095edd",
