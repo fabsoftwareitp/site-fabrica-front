@@ -21,7 +21,7 @@ export const Content = styled.div`
     max-height: 100%;
     grid-template-columns: repeat(2, 1fr);
     transition: .5s ease-in-out;
-    #pages {
+    .pages {
         position: absolute;
         top: 96%;
         left: 50%; 
@@ -36,7 +36,7 @@ export const Content = styled.div`
         display: flex;
         flex-direction: column;
 
-        #pages {
+        .pages {
             visibility: hidden;
         }
     }
@@ -81,7 +81,7 @@ export const AboutProject = styled.div`
     color: #fff;
     z-index: 5;
 
-    #pagesmob {
+    .pagesmob {
         visibility: hidden;
     }
 
@@ -109,7 +109,7 @@ export const AboutProject = styled.div`
             width: 70px;
         }
 
-        #pagesmob {
+        .pagesmob {
             visibility: visible;
             font-size: 1.4rem;
         }
@@ -160,7 +160,7 @@ export const AccessProject = styled.button`
     max-width: 100%;
     width: 250px;
     height: 50px !important;
-    background-color: #031d8f;
+    background-color: var(--circle-color);
     padding: 10px 8px;
     border-radius: 10px;
     margin: 0 auto 10px auto;
@@ -169,9 +169,9 @@ export const AccessProject = styled.button`
         background-color: #496afc;
     }
     transition: .5s;
-    a {
-        color: #fff;
-    }
+    color: rgba(255,255,255,1);
+        /* font-weight: bold; */
+
 
 `;
 

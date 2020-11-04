@@ -45,26 +45,28 @@ function Slider () {
 
     return (
 <>
-<Container>
+<Container id="projetos"> 
         {slider.map((project, index) => {
             return (
 
-            <Content id="projetos" key={index} style={{ transform: `translateX(${x}%)` }}>
+            <Content  key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
                     
                     <Title className="title project-title" FontSize={2}> {project.nome} </Title>
                     <p className="not-title">{project.descricao} </p>
                 <div className="footer-project">
+                <a href={project.link} target="_blank" rel="">
                     <AccessProject className="not-title button-project">
-                        <a href={project.link}  target="_blank"><span>{project.nome}</span> </a>
+                                {project.nome}
                     </AccessProject>
-                    <span id="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
+                </a>
+                    <span className="pagesmob"> 0{index + 1} _________ 0{slider.length}</span>
                 </div>
                 </AboutProject>
                 <BackImg>
                     <img src={project.logo} alt="logo_do_projeto" />
                 </BackImg>
-                    <span id="pages"> 0{index + 1} _________ 0{slider.length}</span>
+                    <span className="pages"> 0{index + 1} _________ 0{slider.length}</span>
             </Content>
             );
         })}

@@ -12,12 +12,14 @@ export default createGlobalStyle`
         overflow-x: hidden;
         background-color: #f4f9ff;
         flex: 1 0 auto;
+        scroll-behavior: smooth;
     }
 
     input, button {
         outline: 0;
         border: 0; 
     }
+
 
     .title {
         font-family: 'Roboto', sans-serif;

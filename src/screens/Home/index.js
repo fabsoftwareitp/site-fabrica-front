@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ContainerFluid } from '../../components/Card/styles';
-import { AccessProject } from '../../components/Slider/styles';
+import { Wrapper, NewsButton } from './styles';
+
 import Navbar from '../../components/Navbar';
 import Welcome from '../../components/Welcome';
 import Slider from '../../components/Slider';
@@ -30,11 +30,7 @@ function Home()  {
     }, []);
 
     let Posts = data.posts;
-    const Wrapper = styled.div`
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow-x: hidden;
-`;
+
     return (
         <>
         <Wrapper>
@@ -49,10 +45,12 @@ function Home()  {
                     <Card key={index} title={post.titulo} path_img={post.imagem} description={post.descricao} date={post.dataCriacao} />
                 )
             })}
-                    <AccessProject>
-                        <Link to="/noticias"> Ver mais </Link>
-                    </AccessProject>
         </ContainerFluid>
+                <Link to="/noticias" >  
+                    <NewsButton>
+                        Ver mais notícias!!!
+                    </NewsButton>
+                </Link>
 
             <Footer />
         </Wrapper>

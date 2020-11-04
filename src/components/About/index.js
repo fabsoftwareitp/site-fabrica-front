@@ -24,7 +24,7 @@ function About () {
         <>
         <Container>
             <Bar />
-            <Title className="title"> Sobre o projeto </Title>
+            <Title className="title" id="sobre"> Sobre o projeto </Title>
             <Description className="not-title"> Fárica de Softwares foi uma iniciativa liderada pelo Me. Danilo Camargo Bueno,
                 teve como principais pilares: O desenvolvimento, prática e evolução nos âmbitos da criação de
                 sistemas. Os participantes do projeto podem ter as seguintes oportunidades.
@@ -49,7 +49,7 @@ function About () {
             <ContainerTeam>
                 <header className="header">
                     <h1 className="title"> {gallery[imageGalleryIndex].name} </h1>
-                    <img id="frame" src={gallery[imageGalleryIndex].url} alt="frame" />
+                    <img className="frame" src={gallery[imageGalleryIndex].url} alt="frame" />
                 </header>
                 <GridGallery>
                     {gallery.map((image, index) => {

@@ -26,7 +26,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-            <Container>
+            <Container id="contato">
                 <Members>
                     <Title className="title"> Dedicado aos Membros </Title>
                     <Grid>

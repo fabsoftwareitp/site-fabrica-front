@@ -85,7 +85,7 @@ export const IconToggle = styled.div`
         transition: all 0.3s linear;
         &:nth-child(1) {
             transform: ${ ({ open }) => open ? 'rotate(45deg)' : 'rotate(0)' };
-        background-color: ${ ({ open }) => open ? '#fff' : '#000' };
+            background-color: ${ ({ open }) => open ? '#fff' : '#000' };
         }
         &:nth-child(2) {
             transform: ${ ({ open }) => open ? 'translateX(100%)' : 'translateX(0)' };
