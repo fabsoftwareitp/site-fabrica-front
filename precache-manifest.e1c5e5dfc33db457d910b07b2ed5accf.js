@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e9f669383fe95daa0cab3b1fbb6fa73",
+    "revision": "867638875f7a61b8a9c10e9ca19665c2",
     "url": "/site-fabrica-front/index.html"
   },
   {
-    "revision": "d6e110e9bf07e4d83bf9",
-    "url": "/site-fabrica-front/static/js/2.98e9ba5a.chunk.js"
+    "revision": "405addf5e648c9676d95",
+    "url": "/site-fabrica-front/static/js/2.80e000f4.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/site-fabrica-front/static/js/2.98e9ba5a.chunk.js.LICENSE.txt"
+    "url": "/site-fabrica-front/static/js/2.80e000f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3576da005fc79b386858",
-    "url": "/site-fabrica-front/static/js/main.b345ff4b.chunk.js"
+    "revision": "2132341343e58999e362",
+    "url": "/site-fabrica-front/static/js/main.03bae82b.chunk.js"
   },
   {
     "revision": "e8b51b4ec7502a095edd",
@@ -24,16 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/site-fabrica-front/static/media/Logo.7e48df29.png"
   },
   {
-    "revision": "9f0e03898ef5f3339950e3475729afff",
-    "url": "/site-fabrica-front/static/media/Time.9f0e0389.jpeg"
-  },
-  {
     "revision": "e44d4dd6594e6ae6718a89059f29cdc7",
     "url": "/site-fabrica-front/static/media/facebook.e44d4dd6.svg"
   },
   {
-    "revision": "3f9623e5735b190a7960308ca5157cc8",
-    "url": "/site-fabrica-front/static/media/github.3f9623e5.svg"
+    "revision": "4d1452520216122f71da13f227bb5a61",
+    "url": "/site-fabrica-front/static/media/github.4d145252.svg"
   },
   {
     "revision": "dda4ed64a67ac5d80e8eac27dfbe677e",
