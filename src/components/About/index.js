@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Container,
     Title,
@@ -7,19 +7,28 @@ import {
     Oportunities,
     Circle,
     Desc,
-    ContainerTeam,
-    Bar,
-    GridGallery,
-    ImagesButton,
-    Gallery
+    Bar
 } from './styles';
 
-import images from '../../images.json';
 
 function About () {
-    let gallery = images.images;
-    const [imageGalleryIndex, setImageGalleryIndex] = useState(0);
 
+    // const [imageGalleryIndex, setImageGalleryIndex] = useState(0);
+    // const [data, setData] = useState({ galeria: [] });
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const result = await axios(
+    //             'https://fabsoftwareitp.000webhostapp.com/api/galeria',
+    //         );
+
+    //         setData(result.data);
+    //     };
+
+    //     fetchData();
+    // }, []);
+    // let gallery = data.galeria;
+    // console.log(data.galeria);
     return (
         <>
         <Container>
@@ -44,12 +53,12 @@ function About () {
                 <Desc className="title">Pegar os lanches da turma da tarde na CAE</Desc>
             </Oportunities>
         </Advantages>
-        <Gallery>
+        {/* <Gallery>
             <h1 className="title gallery"> Galeria </h1> 
             <ContainerTeam>
                 <header className="header">
-                    <h1 className="title"> {gallery[imageGalleryIndex].name} </h1>
-                    <img className="frame" src={gallery[imageGalleryIndex].url} alt="frame" />
+                    <h1 className="title"> {gallery.ano} </h1>
+                    <img className="frame" src={gallery.imagem} alt="frame" />
                 </header>
                 <GridGallery>
                     {gallery.map((image, index) => {
@@ -60,8 +69,8 @@ function About () {
                             key={index} 
                             onClick={() => {
                                 setImageGalleryIndex(index);
-                                }}>
-                                <img src={image.url} alt="teste" />
+                            }}>
+                                <img src={image.imagem} alt="galeria" />
                             </ImagesButton>
 
                         );
@@ -69,7 +78,7 @@ function About () {
     
                 </GridGallery>
             </ContainerTeam>
-        </Gallery>
+        </Gallery> */}
         </>
     )
 }

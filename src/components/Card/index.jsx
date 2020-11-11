@@ -9,7 +9,7 @@ function Card( { title, path_img, description, date }) {
         <img src={path_img} alt="noticia" />
         <Content>
           <h1 className="title"> {title} </h1>
-          <p className="non-title post-desc"> {description} </p>
+          <p className="not-title post-desc"> {description} </p>
           <span className="non-title"> <strong>Data: </strong> {date} </span>
         </Content>
       </Container>

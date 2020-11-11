@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import members from  '../../members.json';
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { 
     Container,
     Card,
@@ -11,7 +10,6 @@ import {
     Radius,
     Photo,
     Title,
-    Graduate,
     Swap,
     Description,
     Contact,
@@ -22,12 +20,26 @@ import {
 
 
 function Members () {
-    let membros = members.Members;
+
+
+    const [data, setData] = useState({ usuarios: [] });
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios(
+                'https://fabsoftwareitp.000webhostapp.com/api/usuarios',
+            );
+
+            setData(result.data);
+        };
+
+        fetchData();
+    }, []);
+    let membros = data.usuarios;
 
     const [isFlipped, setIsflipped] = useState();
     const handleClick = (cardid) => {
-        setIsflipped(cardid);
-       
+        setIsflipped(cardid);  
     }
     
     return (
@@ -35,25 +47,26 @@ function Members () {
         <Container>
             {membros.map((membro, posicao) => {
                 return (
-                    <Card key={membro.id} isFlipped={isFlipped === membro.id} flipDirection="horizontal">
-                        <Front onClick={() => handleClick(membro.id)}>
+                    
+                    <Card key={membro.idMembro} isFlipped={isFlipped === membro.idMembro} flipDirection="horizontal">
+                        <Front onClick={() => handleClick(membro.idMembro)}>
                             <CardHeader />
                             <CardBody>
                                 <Radius>
-                                    <Photo src={membro.Avatar} alt="foto_de_perfil:" />
+                                    <Photo src={membro.fotoPerfil} alt="foto_de_perfil:" />
                                 </Radius>
-                                <Title className="title" FontSize={2.2}> {membro.name} </Title>
-                                <Graduate className="not-title"> {membro.Graduation} </Graduate>
+                                <Title className="title" FontSize={2.2}> {membro.nome} </Title>
+                                {/* <Graduate className="not-title"> {membro.Graduation} </Graduate> */}
                                 <Swap className="swap"/>
                             </CardBody>
                         </Front>
                         <Back onClick={handleClick}>
                             <CardHeader>
-                                <Title className="title" FontSize={1.9}> {membro.name} </Title>
+                                <Title className="title" FontSize={1.9}> {membro.nome} </Title>
                             </CardHeader>
                             <CardBody>
                                 <Description className="not-title">
-                                    {membro.Description}
+                                    {membro.descricao}
                                 </Description>
                                 <Contact>
                                     <a href={membro.Linkedin} target="_blank" ><Linkedin /> </a>
