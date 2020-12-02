@@ -2,7 +2,7 @@ import React from 'react';
 import { Ul } from './styles';
 import { Link } from 'react-router-dom';
 
-
+// 
 const SideNav = ({ open }) => {
     return (
         <Ul open={open} className="not-title">

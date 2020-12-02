@@ -37,12 +37,14 @@ export const Ul = styled.ul`
   @media (max-width: 600px) {
     z-index: 5;
     flex-flow: column nowrap;
+    justify-content: space-evenly;
     background-color: var(--bg-project);
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
+
     width: 35%;
     transition: transform 0.5s ease-in;
     li {
