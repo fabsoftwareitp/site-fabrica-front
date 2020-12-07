@@ -17,7 +17,7 @@ class Welcome extends Component {
                             <h2>IFSP Itapetininga</h2>
                             <a href="#projetos" className="not-title"> Conheça os projetos </a>
                         </div>
-                            <img src={Logo} className="logo-oficial" /> 
+                            <img src={Logo} className="logo-oficial" alt=""/> 
                     </Container>
             </GridWelcome>
 
