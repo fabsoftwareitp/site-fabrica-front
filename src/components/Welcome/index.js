@@ -15,9 +15,9 @@ class Welcome extends Component {
                         <div>
                             <h1 className="title"> Fábrica De Software </h1>
                             <h2>IFSP Itapetininga</h2>
-                            <a href="" className="not-title"> Conheça os projetos </a>
+                            <a href="#projetos" className="not-title"> Conheça os projetos </a>
                         </div>
-                            <img src={Logo} className="logo-oficial" alt="logo do fábrica" /> 
+                            <img src={Logo} className="logo-oficial" /> 
                     </Container>
             </GridWelcome>
 
