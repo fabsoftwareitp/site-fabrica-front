@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.js": "/site-fabrica-front/static/js/main.0e5e4bd5.chunk.js",
-    "main.js.map": "/site-fabrica-front/static/js/main.0e5e4bd5.chunk.js.map",
-    "runtime-main.js": "/site-fabrica-front/static/js/runtime-main.67d6b794.js",
-    "runtime-main.js.map": "/site-fabrica-front/static/js/runtime-main.67d6b794.js.map",
-    "static/js/2.11db0570.chunk.js": "/site-fabrica-front/static/js/2.11db0570.chunk.js",
-    "static/js/2.11db0570.chunk.js.map": "/site-fabrica-front/static/js/2.11db0570.chunk.js.map",
-    "index.html": "/site-fabrica-front/index.html",
-    "precache-manifest.6d805373b2d82c87df0f80a2f9c68368.js": "/site-fabrica-front/precache-manifest.6d805373b2d82c87df0f80a2f9c68368.js",
-    "service-worker.js": "/site-fabrica-front/service-worker.js",
-    "static/js/2.11db0570.chunk.js.LICENSE.txt": "/site-fabrica-front/static/js/2.11db0570.chunk.js.LICENSE.txt",
-    "static/media/Logo.png": "/site-fabrica-front/static/media/Logo.7e48df29.png",
-    "static/media/facebook.svg": "/site-fabrica-front/static/media/facebook.e44d4dd6.svg",
-    "static/media/github.svg": "/site-fabrica-front/static/media/github.4d145252.svg",
-    "static/media/github.png": "/site-fabrica-front/static/media/github.dda4ed64.png"
+    "main.css": "/static/css/main.83440039.chunk.css",
+    "main.js": "/static/js/main.ba67134e.chunk.js",
+    "main.js.map": "/static/js/main.ba67134e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.407533bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.407533bc.js.map",
+    "static/js/2.3554400b.chunk.js": "/static/js/2.3554400b.chunk.js",
+    "static/js/2.3554400b.chunk.js.map": "/static/js/2.3554400b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f25c882c6dba2844a44a16c110520f39.js": "/precache-manifest.f25c882c6dba2844a44a16c110520f39.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.83440039.chunk.css.map": "/static/css/main.83440039.chunk.css.map",
+    "static/js/2.3554400b.chunk.js.LICENSE.txt": "/static/js/2.3554400b.chunk.js.LICENSE.txt",
+    "static/media/facebook.svg": "/static/media/facebook.e44d4dd6.svg",
+    "static/media/github.svg": "/static/media/github.3f9623e5.svg",
+    "static/media/github.png": "/static/media/github.dda4ed64.png",
+    "static/media/logo-oficial.png": "/static/media/logo-oficial.b28bc63f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.67d6b794.js",
-    "static/js/2.11db0570.chunk.js",
-    "static/js/main.0e5e4bd5.chunk.js"
+    "static/js/runtime-main.407533bc.js",
+    "static/js/2.3554400b.chunk.js",
+    "static/css/main.83440039.chunk.css",
+    "static/js/main.ba67134e.chunk.js"
   ]
 }
