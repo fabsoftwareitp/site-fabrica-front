@@ -14,7 +14,7 @@ export const NewsButton = styled.button`
     background-color: var(--circle-color);
     padding: 10px 8px;
     border-radius: 10px;
-    margin: 0 auto 10px auto;
+    margin: 2rem auto 10px auto;
     cursor: pointer;
     &:hover {
         background-color: #496afc;

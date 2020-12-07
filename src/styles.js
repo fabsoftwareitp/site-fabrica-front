@@ -29,16 +29,17 @@ export default createGlobalStyle`
     .not-title {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;      
+        line-height: 1.5;
     }
     
     :root {
         font-size: 60%;
         --bg-welcome: #f4f9ff;
-        --bg-project: #182138;
-        --font-color: #a5793d;
-        --circle-color: #ffb441;
-        --footer-info: #2d3e50;
-        --footer-color: #243141;
+        --bg-project: #042f3c;
+        --font-color: #fd624c;
+        --circle-color: #fd624c;
+        --footer-info: #2F4858;
+        --footer-color: #042f3c;
         --facebook-color: #4267B2;
         --googleplus-color: #DB4A39;
         --twitter-color: #1DA1F2;
@@ -55,5 +56,20 @@ export default createGlobalStyle`
     a {
         text-decoration: none;
     }
+
+
+    .titleGeneral {
+        color:black;
+        margin: 5% 0 3% 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        margin-top:9rem;
+    
+        @media (max-width: 740px) and (orientation: landscape) {
+            font-size: 2.75rem;
+        }
+    }
+    
 
 `;

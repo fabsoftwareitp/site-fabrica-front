@@ -1,4 +1,5 @@
 import React from 'react';
+import Video from '../Video';
 import {
     Container,
     Title,
@@ -34,25 +35,34 @@ function About () {
         <Container>
             <Bar />
             <Title className="title" id="sobre"> Sobre o projeto </Title>
-            <Description className="not-title"> Fárica de Softwares foi uma iniciativa liderada pelo Me. Danilo Camargo Bueno,
-                teve como principais pilares: O desenvolvimento, prática e evolução nos âmbitos da criação de
-                sistemas. Os participantes do projeto podem ter as seguintes oportunidades.
+            <Description className="not-title"> A Fábrica de Software é uma iniciativa liderada pelo Prof. Me. Danilo Camargo Bueno, e têm como objetivo o desenvolvimento, a prática e a evolução nos âmbitos da criação de software. Neste sentido, os participantes do projeto podem ter, dentre outras, as seguintes oportunidades:
             </Description>
         </Container>
         <Advantages>
             <Oportunities>
                 <Circle />
-                <Desc className="title">Conhecer novos desafios e diferentes tecnologias</Desc>
+                <Desc className="title">Conhecer diferentes tecnologias</Desc>
             </Oportunities>
             <Oportunities>
                 <Circle />
-                <Desc className="title">Festinha todo mês, só falto a breja, mas ta valendo</Desc>
+                <Desc className="title">Enfrentar desafios reais</Desc>
             </Oportunities>
             <Oportunities>
                 <Circle />
-                <Desc className="title">Pegar os lanches da turma da tarde na CAE</Desc>
+                <Desc className="title">Trabalhar em equipe</Desc>
             </Oportunities>
         </Advantages>
+        
+        <Container>
+        <Title className="title" id="sobre"> Depoimentos </Title>
+        <div className="depoimentos">
+            <Video src="https://www.youtube.com/embed/B1bys3rAuL8" member="Rafael Damiam"></Video>
+            <Video src="https://www.youtube.com/embed/D054k8JNOm4" member="João Moraiz"></Video>
+            <Video src="https://www.youtube.com/embed/sDcW1keRIDs"></Video>
+            <Video src="https://www.youtube.com/embed/aw3LTiobEYs"></Video>
+        </div>
+        </Container>
+
         {/* <Gallery>
             <h1 className="title gallery"> Galeria </h1> 
             <ContainerTeam>

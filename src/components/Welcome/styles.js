@@ -44,28 +44,46 @@ export const Container = styled.div`
             align-self: center;
         }
 
-        button {
-            width: 90px;
+        h2 {
+            margin: .5rem 0 2rem 0;
+            color: #545454;
+        }
+
+        a {
             border: none;
             background-color: var(--circle-color);
             color: white;
             border-radius: 5px;
             padding: 10px 5px;
             cursor: pointer;
+            font-size: 1.5rem;
         }
+    }
+
+    img {
+        max-width:250px;
     }
 
     @media screen and (max-width: 740px) {
         height: 82vh;
         flex-direction: column;
+        justify-content: center;
         div {
+            flex-direction: column;
+        justify-content: center;
             h1 {
                 font-size: 5rem;
                 text-align: center;
             }
 
-            button {
-                margin-left: 20.5%;
+            h2 {
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                margin:auto;
+                margin-bottom: 2rem;
             }
         }
 

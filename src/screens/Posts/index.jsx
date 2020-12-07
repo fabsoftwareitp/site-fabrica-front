@@ -26,9 +26,23 @@ function Posts() {
       <>
       <Container>
       <Navbar />
-      <h1 className="title news"> Notícias </h1>
+      <h1 className="titleNews">Últimos acontecimentos da Fábrica </h1>
         <ContainerFluid>
           {Posts.map((post, index) => {
+
+            console.log(post.dataCriacao);
+            
+            return (
+              <div className="post" key={index}>
+                <figure>
+                  <img src={post.imagem} alt="image" />
+                </figure>
+                <h2>{post.titulo}</h2>
+                <h6>Postado em {post.dataCriacao}</h6>
+                <p>{post.descricao}</p>
+              </div>
+            )
+
             return (
               <Card key={index} title={post.titulo} path_img={post.imagem} description={post.descricao} date={post.dataCriacao} />
             )

@@ -23,7 +23,7 @@ export const Content = styled.div`
     transition: .5s ease-in-out;
     .pages {
         position: absolute;
-        top: 96%;
+        top: 92%;
         left: 50%; 
         transform: translate(-50%, -50%); 
         text-align: center;

@@ -3,26 +3,26 @@ import React from 'react';
 import { SidebarContainer, SocialMediaIcons } from './styles';
 import Facebook from '../../images/icones/facebook.svg';
 // import Instagram from '../../images/icones/instagram.svg';
-import Twitter from '../../images/icones/github.svg';
+import GitHub from '../../images/icones/github.svg';
 
 function SidebarIcons() {
 
         return (
             <SidebarContainer> 
                 <ul>
-                    <li> 
+                    {/* {<li> 
                         <a href="/">
                             <SocialMediaIcons src={Facebook} />
                         </a>
-                    </li>
+                    </li>} */}
                     {/* <li>
                         <a href="/">
                             <SocialMediaIcons src={Instagram} />
                         </a>
                     </li> */}
                     <li>
-                        <a href="/">
-                            <SocialMediaIcons src={Twitter} />
+                        <a href="https://github.com/fabsoftwareitp/">
+                            <SocialMediaIcons src={GitHub} />
                         </a>
                     </li>
                 </ul>

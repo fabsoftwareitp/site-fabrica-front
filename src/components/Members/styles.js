@@ -63,7 +63,7 @@ export const Back = styled.div`
 
 export const CardHeader = styled.div`
     height: 80px;
-    background: #171123;
+    background: #2F4858;
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ export const CardHeader = styled.div`
 export const CardBody = styled.div`
     position: relative;
     height: 74%;
-    background: #492b6a;
+    background: #042f3c; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,6 +119,7 @@ export const Graduate = styled.p`
 export const Swap = styled(SwapHorizIcon)`
     margin: 20px auto 10px auto;
     font-size: 2.5rem !important;
+    color:white;
 
 `;
 
@@ -155,7 +156,7 @@ export const Contact = styled.div`
 const iconCSS = css`
     font-size: 2.2rem !important;
     path {
-        fill: #000;
+        fill: #FFF;
     }
 `;
 

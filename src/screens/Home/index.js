@@ -39,6 +39,7 @@ function Home()  {
             <Slider />
             <About />
             <Members />
+            <h1 className="titleGeneral">Últimas notícias</h1>
         <ContainerFluid>
             {Posts.map((post, index) => {
                 return (
@@ -48,7 +49,7 @@ function Home()  {
         </ContainerFluid>
                 <Link to="/noticias" >  
                     <NewsButton>
-                        Ver mais notícias!!!
+                        Ver mais...
                     </NewsButton>
                 </Link>
 

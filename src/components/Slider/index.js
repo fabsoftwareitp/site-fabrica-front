@@ -52,7 +52,7 @@ function Slider () {
             <Content  key={index} style={{ transform: `translateX(${x}%)` }}>
                 <AboutProject>
                     
-                    <Title className="title project-title" FontSize={2}> {project.nome} </Title>
+                    <Title className="title project-title" FontSize={3}> {project.nome} </Title>
                     <p className="not-title">{project.descricao} </p>
                 <div className="footer-project">
                 <a href={project.link} target="_blank" rel="">

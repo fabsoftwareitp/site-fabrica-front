@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 import { GridWelcome, Container } from './styles';
 import SidebarIcons from '../SidebarIcons';
-import Logo from '../../images/Logo.png';
+import Logo from '../../images/logo-oficial.png';
 
 class Welcome extends Component {
     render() {
@@ -13,10 +13,11 @@ class Welcome extends Component {
                     <SidebarIcons />
                     <Container> 
                         <div>
-                            <h1 className="title"> Fábrica De Softwares </h1>
-                            <button className="not-title"> Projetos </button>
+                            <h1 className="title"> Fábrica De Software </h1>
+                            <h2>IFSP Itapetininga</h2>
+                            <a href="" className="not-title"> Conheça os projetos </a>
                         </div>
-                            <img src={Logo} alt="logo do fábrica" /> 
+                            <img src={Logo} className="logo-oficial" alt="logo do fábrica" /> 
                     </Container>
             </GridWelcome>
 

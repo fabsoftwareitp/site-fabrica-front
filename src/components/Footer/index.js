@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LogoSGE from '../../images/Logo.png';
+import logo from '../../images/logo-oficial.png';
 
 import { 
     Container,
@@ -55,7 +55,9 @@ class Footer extends Component {
                 </SocialMedia>
                 <Made>
                     <Title className="title"> Desenvolvido Por: </Title>
-                    <Logo src={LogoSGE} alt="Logo_Fábrica" />
+                    <a href="https://ic.itp.ifsp.edu.br">
+                    <Logo src={logo} alt="Logo_Fábrica" />
+                    </a>
                 </Made>
             </Container>
             <ContentFooter className="not-title">

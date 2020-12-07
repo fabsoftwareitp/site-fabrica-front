@@ -44,6 +44,7 @@ function Members () {
     
     return (
         <>
+        <Title className="titleGeneral"> Equipe Fábrica de Software</Title>
         <Container>
             {membros.map((membro, posicao) => {
                 return (
