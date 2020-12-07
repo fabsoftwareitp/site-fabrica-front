@@ -58,8 +58,8 @@ function About () {
         <div className="depoimentos">
             <Video src="https://www.youtube.com/embed/B1bys3rAuL8" member="Rafael Damiam"></Video>
             <Video src="https://www.youtube.com/embed/D054k8JNOm4" member="João Moraiz"></Video>
-            <Video src="https://www.youtube.com/embed/sDcW1keRIDs"></Video>
-            <Video src="https://www.youtube.com/embed/aw3LTiobEYs"></Video>
+            <Video src="https://www.youtube.com/embed/sDcW1keRIDs" member="Vinicius Zevarex"></Video>
+            <Video src="https://www.youtube.com/embed/aw3LTiobEYs" member="Lucas Cavalherie"></Video>
         </div>
         </Container>
 
