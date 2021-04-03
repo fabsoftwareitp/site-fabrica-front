@@ -11,6 +11,7 @@ import About from '../../components/About';
 import Members from '../../components/Members';
 import Card from '../../components/Card';   
 import Footer from '../../components/Footer';
+import DisabledMembers from '../../components/DisabledMembers';
 
 
 
@@ -39,6 +40,7 @@ function Home()  {
             <Slider />
             <About />
             <Members />
+            <DisabledMembers />
             <h1 className="titleGeneral">Últimas notícias</h1>
         <ContainerFluid>
             {Posts.map((post, index) => {
