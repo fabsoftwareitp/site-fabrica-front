@@ -27,7 +27,7 @@ function Members () {
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
-                'https://fabsoftwareitp.000webhostapp.com/api/usuariosPorStatus/ativos',
+                'https://fabsoftwareitp.000webhostapp.com/api/usuariosPorStatus/ativo',
             );
 
             setData(result.data);
