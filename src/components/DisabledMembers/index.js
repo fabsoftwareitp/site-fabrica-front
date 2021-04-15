@@ -16,10 +16,10 @@ import {
     Linkedin,
     Github,
     Instagram
-} from './styles';
+} from '../Members/styles';
 
 
-function Members () {
+function DisabledMembers () {
 
 
     const [data, setData] = useState({ usuarios: [] });
@@ -27,7 +27,7 @@ function Members () {
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
-                'https://fabsoftwareitp.000webhostapp.com/api/usuariosPorStatus/ativo',
+                'https://fabsoftwareitp.000webhostapp.com/api/usuariosPorStatus/desativado',
             );
 
             setData(result.data);
@@ -44,7 +44,7 @@ function Members () {
     
     return (
         <>
-        <Title className="titleGeneral"> Equipe Fábrica de Software</Title>
+        <Title className="titleGeneral"> Ex-Integrantes da Equipe</Title>
         <Container>
             {membros.map((membro, posicao) => {
                 return (
@@ -85,4 +85,4 @@ function Members () {
         </>
     )
 }
-export default Members;
+export default DisabledMembers;
